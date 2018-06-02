@@ -1,0 +1,15 @@
+source ~/.bashrc
+
+mkvirtualenv pofiles_api --python=python3
+
+pip install django=1.11
+
+pip install djangorestframework==3.6.2
+
+cd /vagrant
+
+mkdir src
+
+cd src
+
+django-admin.py startproject profiles_project
